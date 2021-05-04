@@ -15,12 +15,9 @@
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/style-resources": "^1.0.0",
     "add": "^2.0.6",
-    "aframe": "^1.2.0",
     "core-js": "^3.8.3",
-    "gsap": "^3.6.1",
     "node-sass": "^5.0.0",
     "nuxt": "^2.14.12",
-    "nuxt-gsap": "^0.1.4",
     "nuxt-i18n": "^6.20.2",
     "sass-loader": "^10.1.1",
     "yarn": "^1.22.10"
