@@ -22,8 +22,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background: url('~/assets/svg/plane.svg') $dark-blue no-repeat center fixed;
-  background-size: cover;
+  background: $dark-blue;
 }
 
 html,

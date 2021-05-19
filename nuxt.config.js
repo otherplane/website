@@ -111,6 +111,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    'nuxt-gsap-module',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
