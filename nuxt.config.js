@@ -1,15 +1,12 @@
-import { languages } from './constants'
-import { fallbackLocale } from './default'
-
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   router: {
-    base: '/',
+    base: '/website/',
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'new-website',
+    title: 'Other Plane Labs',
     htmlAttrs: {
       lang: 'en',
     },
@@ -20,82 +17,47 @@ export default {
       {
         hid: 'title',
         name: 'title',
-        content: 'title',
+        content: 'Other Plane Labs',
       },
       {
         hid: 'description',
         name: 'description',
-        content: 'description',
+        content:
+          'Other Plane builds apps and infrastructure for the Witnet ecosystem.',
       },
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'title',
+        content: 'Other Plane Labs',
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'description',
-      },
-      {
-        hid: 'twitter:image',
-        name: 'twitter:image',
-        content: '/',
-      },
-      {
-        hid: 'twitter:image:alt',
-        name: 'twitter:image:alt',
-        content: 'alt',
+        content:
+          'Other Plane builds apps and infrastructure for the Witnet ecosystem',
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'title',
+        content: 'Other Plane Labs',
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'description',
-      },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: '/',
-      },
-      {
-        hid: 'og:image:secure_url',
-        property: 'og:image:secure_url',
-        content: '/',
-      },
-      {
-        hid: 'og:image:alt',
-        property: 'og:image:alt',
-        content: 'EXAMPLE',
+        content:
+          'Other Plane builds apps and infrastructure for the Witnet ecosystem',
       },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'shortcut icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap',
-      },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap',
-      },
     ],
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/styles/colors.scss', '~/assets/styles/main.scss'],
+  css: [],
   // You will have to add this new object if it doesn't exist already
-  styleResources: {
-    scss: ['~/assets/styles/main.scss', '~/assets/styles/colors.scss'],
-  },
   // ...
-  modules: ['@nuxtjs/style-resources', '@nuxt/content', 'nuxt-i18n'],
+  modules: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -111,30 +73,10 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
-    'nuxt-gsap-module',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
-  i18n: {
-    // add SEO attributes in layout head for better performance
-    seo: false,
-    locales: languages,
-    vueI18n: {
-      fallbackLocale,
-      messages: {
-        en: require('./locales/en.json'),
-        es: require('./locales/es.json'),
-      },
-    },
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      onlyOnRoot: true,
-      alwaysRedirect: true,
-    },
-    defaultLocale: 'en',
-  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 }
